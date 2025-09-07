@@ -114,8 +114,8 @@ public class RapidFire
             return HookResult.Continue;
             
         // warn player
-        Server.PrintToChatAll($"{ChatUtils.FormatMessage(_plugin.Config.ChatPrefix)} Player {ChatColors.Red}{eventWeaponFire.Userid.PlayerName}{ChatColors.Default} tried using {ChatColors.Red}rapid fire{ChatColors.Default}!");
-        _rapidFireBlockWarnings[index] = Server.CurrentTime;
+        // Server.PrintToChatAll($"{ChatUtils.FormatMessage(_plugin.Config.ChatPrefix)} Player {ChatColors.Red}{eventWeaponFire.Userid.PlayerName}{ChatColors.Default} tried using {ChatColors.Red}rapid fire{ChatColors.Default}!");
+        // _rapidFireBlockWarnings[index] = Server.CurrentTime;
 
         return HookResult.Continue;
     }

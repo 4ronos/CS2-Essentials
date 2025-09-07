@@ -76,9 +76,9 @@ public class TeleportFix
             return HookResult.Changed;
         
         // print a warning to all players
-        var feature = player.Pawn.Value!.As<CCSPlayerPawn>().OnGroundLastTick ? "teleport" : "airstuck";
-        Server.PrintToChatAll($"{ChatUtils.FormatMessage(_plugin.Config.ChatPrefix)} Player {ChatColors.Red}{player.PlayerName}{ChatColors.Default} tried using {ChatColors.Red}{feature}{ChatColors.Default}!");
-        _teleportBlockWarnings[player.Index] = Server.CurrentTime;
+        // var feature = player.Pawn.Value!.As<CCSPlayerPawn>().OnGroundLastTick ? "teleport" : "airstuck";
+        // Server.PrintToChatAll($"{ChatUtils.FormatMessage(_plugin.Config.ChatPrefix)} Player {ChatColors.Red}{player.PlayerName}{ChatColors.Default} tried using {ChatColors.Red}{feature}{ChatColors.Default}!");
+        // _teleportBlockWarnings[player.Index] = Server.CurrentTime;
 
         return HookResult.Changed;
     }
